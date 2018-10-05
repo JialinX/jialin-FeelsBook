@@ -1,19 +1,7 @@
 #Internal package file, do not edit.
-#Fri Oct 05 11:21:29 MDT 2018
-1.base=/Users/jialinxie/Documents/cmput301/assignment1/jialin-FeelsBook/app/build/intermediates/transforms/dexMerger/debug/14
-2.path=classes.dex
+#Fri Oct 05 11:38:44 MDT 2018
 0.baseType=DIRECTORY
-3.baseType=DIRECTORY
-2.base=/Users/jialinxie/Documents/cmput301/assignment1/jialin-FeelsBook/app/build/intermediates/transforms/dexMerger/debug/11
-3.set=DEX
-2.set=DEX
-1.baseType=DIRECTORY
-3.path=classes.dex
-count=4
-1.set=DEX
+0.base=/Users/jialinxie/Documents/cmput301/assignment1/jialin-FeelsBook/app/build/intermediates/transforms/dexMerger/debug/33
 0.path=classes.dex
-3.base=/Users/jialinxie/Documents/cmput301/assignment1/jialin-FeelsBook/app/build/intermediates/transforms/dexMerger/debug/13
 0.set=DEX
-0.base=/Users/jialinxie/Documents/cmput301/assignment1/jialin-FeelsBook/app/build/intermediates/transforms/dexMerger/debug/12
-2.baseType=DIRECTORY
-1.path=classes.dex
+count=1
