@@ -2,7 +2,7 @@
 
 For best test, please use a Pixel XL 5.5inch screen with api 28 
 
-remainder: if you change something of the comment/date
+!! REMINDER: if you change something of the comment/date
 please press "change" before press "apply changes"
 
 reference:
