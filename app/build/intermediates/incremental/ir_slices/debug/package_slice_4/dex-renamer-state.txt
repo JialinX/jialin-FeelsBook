@@ -1,0 +1,4 @@
+#Fri Oct 05 04:04:02 MDT 2018
+base.0=/Users/jialinxie/Documents/cmput301/assignment1/jialin-FeelsBook/app/build/intermediates/transforms/dexMerger/debug/4
+path.0=classes.dex
+renamed.0=classes.dex
