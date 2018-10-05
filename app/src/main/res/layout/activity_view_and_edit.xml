@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewAndEdit">
+
+    <EditText
+        android:id="@+id/newComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="New Comment"
+        android:maxLength="100"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/saveComment"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oldComment" />
+
+    <EditText
+        android:id="@+id/newDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="New Date"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/saveDate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oldDate" />
+
+    <Button
+        android:id="@+id/saveComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="updateComment"
+        android:text="@string/change"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/newComment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/newComment" />
+
+    <Button
+        android:id="@+id/saveDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="updateDate"
+        android:text="@string/change"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/newDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/newDate" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:onClick="applyChange"
+        android:text="Apply changes"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/deleteButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="deleteEmotion"
+        android:text="Delete emotion"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/saveButton" />
+
+    <TextView
+        android:id="@+id/oldEmotion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/oldComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newAnger" />
+
+    <TextView
+        android:id="@+id/oldDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newComment" />
+
+    <Button
+        android:id="@+id/newLove"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:onClick="updateEmotionLove"
+        android:text="@string/love"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oldEmotion" />
+
+    <Button
+        android:id="@+id/newJoy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:onClick="updateEmotionJoy"
+        android:text="@string/joy"
+        app:layout_constraintStart_toEndOf="@+id/newLove"
+        app:layout_constraintTop_toBottomOf="@+id/oldEmotion" />
+
+    <Button
+        android:id="@+id/newSurprise"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:onClick="updateEmotionSurprise"
+        android:text="@string/surprise"
+        app:layout_constraintStart_toEndOf="@+id/newJoy"
+        app:layout_constraintTop_toBottomOf="@+id/oldEmotion" />
+
+    <Button
+        android:id="@+id/newAnger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:onClick="updateEmotionAnger"
+        android:text="@string/anger"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newLove" />
+
+    <Button
+        android:id="@+id/newSadness"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:onClick="updateEmotionSadness"
+        android:text="@string/sadness"
+        app:layout_constraintStart_toEndOf="@+id/newAnger"
+        app:layout_constraintTop_toBottomOf="@+id/newJoy" />
+
+    <Button
+        android:id="@+id/newFear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:onClick="updateEmotionFear"
+        android:text="@string/fear"
+        app:layout_constraintStart_toEndOf="@+id/newSadness"
+        app:layout_constraintTop_toBottomOf="@+id/newSurprise" />
+</android.support.constraint.ConstraintLayout>

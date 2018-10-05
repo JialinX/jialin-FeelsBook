@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">jialin-FeelsBook</string>
+    <string name="love">Love</string>
+    <string name="joy">Joy</string>
+    <string name="surprise">Surprise</string>
+    <string name="anger">Anger</string>
+    <string name="sadness">Sadness</string>
+    <string name="fear">Fear</string>
+    <string name="comment">Enter a comment</string>
+    <string name="send">Send</string>
+    <string name="save">Save</string>
+    <string name="change">Change</string>
+    <string name="hint_comment">Enter a comment (optional)</string>
+    <string name="promote_bottom">You can add a comment: (Do it first)</string>
+    <string name="promote_top">Choose your emotion:</string>
+    <string name="history">History</string>
+    <string name="count">Count</string>
+    <string name="count_message2">Emotions:            Times:</string>
+    <string name="count_message1">Emotions Count</string>
+    <string name="clear_all">Clear All</string>
+</resources>
